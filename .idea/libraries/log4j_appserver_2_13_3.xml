@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="log4j-appserver-2.13.3">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/给学生_项目实训/jar包/apache-log4j-2.13.3-bin/log4j-appserver-2.13.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

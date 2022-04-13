@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="704.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.LoginFrameController">
+   <children>
+      <ImageView fitHeight="469.0" fitWidth="752.0" layoutX="-31.0" layoutY="-11.0">
+         <image>
+            <Image url="@images/background1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane>
+         <children>
+            <HBox alignment="CENTER" layoutX="-2.0" layoutY="110.0" prefHeight="84.0" prefWidth="607.0" AnchorPane.bottomAnchor="244.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="110.0">
+               <children>
+                  <Label fx:id="lb_id" text="账号：" textFill="#e8e2e2" />
+                  <TextField fx:id="tf_id" promptText="请输入您的账号" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="334.0" prefHeight="55.0" prefWidth="704.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="334.0">
+               <children>
+                  <Button fx:id="bt_register" mnemonicParsing="false" onAction="#bt_registerEvent" prefHeight="36.0" prefWidth="290.0" style="-fx-background-color: #336699;" text="还没有账号？立即注册" textFill="#f8f0f0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="273.0" prefHeight="55.0" prefWidth="704.0" AnchorPane.bottomAnchor="110.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="273.0">
+               <children>
+                  <Button fx:id="bt_login" mnemonicParsing="false" onAction="#bt_loginEvent" prefHeight="36.0" prefWidth="290.0" style="-fx-background-color: #336699;" text="登录" textFill="#ebdede" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutY="178.0" prefHeight="84.0" prefWidth="704.0" AnchorPane.bottomAnchor="176.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="178.0">
+               <children>
+                  <Label fx:id="lb_password" text="密码：" textFill="#ddd7d7" />
+                  <PasswordField fx:id="pf_password" promptText="请输入您的密码" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="122.0" prefWidth="607.0" AnchorPane.bottomAnchor="316.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" text="登录（login）" textFill="#fff7f7">
+                     <font>
+                        <Font name="System Bold" size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

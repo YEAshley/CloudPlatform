@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="406.0" prefWidth="666.0" style="-fx-background-color: #23253E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.WelcomeFrameController">
+   <children>
+      <ImageView fitHeight="458.0" fitWidth="708.0">
+         <image>
+            <Image url="@images/welcome.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bt_enter" layoutX="456.0" layoutY="94.0" mnemonicParsing="false" onAction="#bt_enterEvent" prefHeight="33.0" prefWidth="109.0" style="-fx-background-color: #23253E;" textFill="#e1bc58">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="69.0">
+               <image>
+                  <Image url="@images/start.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

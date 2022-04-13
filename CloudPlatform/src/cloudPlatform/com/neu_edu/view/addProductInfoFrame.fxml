@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="368.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.AddProductInfoFrameController">
+   <children>
+      <ImageView fitHeight="368.0" fitWidth="705.0" layoutX="-19.0">
+         <image>
+            <Image url="@images/background1.jpg" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="368.0" prefWidth="686.0" spacing="15.0" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="686.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="90.0" text="产品名称：" textFill="WHITE" />
+                  <TextField fx:id="tf_proName" prefHeight="36.0" prefWidth="345.0" promptText="请输入产品名称" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="686.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="90.0" text="产品类别：" textFill="WHITE" />
+                  <ComboBox fx:id="cb_proType" prefHeight="36.0" prefWidth="349.0" promptText="请选择产品类别" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="686.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="90.0" text="产品规格：" textFill="WHITE" />
+                  <TextField fx:id="tf_proSize" prefHeight="36.0" prefWidth="345.0" promptText="请输入产品规格" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="686.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="41.0" prefWidth="90.0" text="产品描述：" textFill="WHITE" />
+                  <TextField fx:id="tf_proDescription" prefHeight="36.0" prefWidth="345.0" promptText="请输入产品描述" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="415.0" layoutY="286.0" prefHeight="52.0" prefWidth="165.0" spacing="30.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="415.0" AnchorPane.rightAnchor="106.0" AnchorPane.topAnchor="286.0">
+         <children>
+            <Button fx:id="bt_ok" layoutX="352.0" layoutY="288.0" mnemonicParsing="false" onAction="#bt_okEvent" style="-fx-background-color: #993333;" text="确定" textFill="WHITE" />
+            <Button fx:id="bt_reset" mnemonicParsing="false" onAction="#bt_resetEvent" style="-fx-background-color: #336666;" text="重置" textFill="#fcfcfc" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

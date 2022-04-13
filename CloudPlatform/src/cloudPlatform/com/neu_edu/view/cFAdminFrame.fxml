@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="CFAdminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="527.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.CFAdminFrameController">
+   <children>
+      <Accordion prefHeight="527.0" prefWidth="212.0" style="-fx-background-color: #634960;">
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="0.23" saturation="-0.23" />
+         </effect>
+         <panes>
+            <TitledPane animated="false" layoutX="10.0" layoutY="82.0" text="我的工厂">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="466.0" prefWidth="212.0" style="-fx-background-color: #634960;">
+                           <children>
+                              <Button fx:id="bt_device" layoutY="13.0" mnemonicParsing="false" onAction="#bt_deviceEvent" prefHeight="36.0" prefWidth="212.0" style="-fx-background-color: #336699;" text="我的设备" textFill="#f2efef">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect></Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="118.0" prefHeight="280.0" prefWidth="212.0" text="订单管理">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="459.0" prefWidth="212.0" style="-fx-background-color: #634960;" />
+                        <Button fx:id="bt_oderInfo" layoutX="-2.0" layoutY="15.0" mnemonicParsing="false" onAction="#bt_oderInfoEvent" prefHeight="36.0" prefWidth="212.0" style="-fx-background-color: #336699;" text="订单基本信息" textAlignment="CENTER" textFill="#fcf5f5">
+                           <effect>
+                              <DropShadow />
+                           </effect></Button>
+                        <Button fx:id="bt_orderPro" layoutY="66.0" mnemonicParsing="false" onAction="#bt_orderProEvent" prefHeight="36.0" prefWidth="212.0" style="-fx-background-color: #336699;" text="订单排产" textAlignment="CENTER" textFill="#fcf5f5">
+                           <effect>
+                              <DropShadow />
+                           </effect></Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="10.0" layoutY="46.0" prefHeight="280.0" prefWidth="212.0" text="返回首页">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="-1.0" layoutY="-3.0" prefHeight="459.0" prefWidth="212.0" style="-fx-background-color: #634960;" />
+                        <Button fx:id="bt_return" layoutX="-2.0" layoutY="15.0" mnemonicParsing="false" onAction="#bt_returnEvent" prefHeight="36.0" prefWidth="212.0" style="-fx-background-color: #336699;" text="返回登录页面" textAlignment="CENTER" textFill="#fcf5f5">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </TitledPane>
+         </panes>
+      </Accordion>
+      <AnchorPane fx:id="rootPane" layoutX="216.0" prefHeight="527.0" prefWidth="984.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="216.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="527.0" fitWidth="993.0" layoutX="-8.0">
+               <image>
+                  <Image url="@images/background2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+{"deviceCode":"CFD202077501","deviceName":"i5-智能设备1","deviceType":"车床","deviceSize":"200*64","deviceDescription":"生产武器零件","deviceStatus":"已关闭","leaseStatus":"已被占用","factory":"云工厂1","deviceSource":"租用设备"}
+{"deviceCode":"CFD202083602","deviceName":"i5-智能设备2","deviceType":"铣床","deviceSize":"200*50","deviceDescription":"生产武器零件","deviceStatus":"闲置中","leaseStatus":"工厂设备","factory":"云工厂2","deviceSource":"自有设备"}
+{"deviceCode":"CFD202067403","deviceName":"i5-智能设备3","deviceType":"镗床","deviceSize":"200*80","deviceDescription":"生产武器零件","deviceStatus":"闲置中","leaseStatus":"已被占用","factory":"云工厂1","deviceSource":"自有设备"}
+{"deviceCode":"CFP20200","deviceName":"11","deviceType":"车床","deviceSize":"11","deviceDescription":"11","deviceStatus":"已关闭","leaseStatus":"工厂设备","factory":"云工厂1","deviceSource":"自有设备"}

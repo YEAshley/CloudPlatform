@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.ProductInfoFrameController">
+   <children>
+      <ImageView fitHeight="499.0" fitWidth="1032.0">
+         <image>
+            <Image url="@images/background3.jpg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="470.0" prefWidth="991.0">
+         <children>
+            <TableView fx:id="tv_productInfo" layoutX="32.0" layoutY="84.0" prefHeight="289.0" prefWidth="896.0">
+              <columns>
+                <TableColumn fx:id="tc_number" prefWidth="75.0" text="序号" />
+                <TableColumn fx:id="tc_proCode" prefWidth="181.0" text="产品编号" />
+                  <TableColumn fx:id="tc_proName" prefWidth="126.0" text="产品名称" />
+                  <TableColumn fx:id="tc_proType" prefWidth="116.0" text="产品类别" />
+                  <TableColumn fx:id="tc_proSize" prefWidth="122.0" text="产品规格" />
+                  <TableColumn fx:id="tc_proDescription" prefWidth="124.0" text="产品描述" />
+                  <TableColumn fx:id="tc_action" prefWidth="222.0" text="操作">
+                     <columns>
+                        <TableColumn fx:id="tc_modify" prefWidth="83.0" text="修改" />
+                        <TableColumn fx:id="tc_delete" text="删除" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+            </TableView>
+            <Text fx:id="text_tip" layoutX="32.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="436.3603515625" />
+            <HBox layoutX="33.0" layoutY="27.0" prefHeight="36.0" prefWidth="964.0" spacing="30.0">
+               <children>
+                  <Button fx:id="bt_add" mnemonicParsing="false" onAction="#bt_addEvent" style="-fx-background-color: #CC9933;" text="新建" textFill="#f5f5f5" />
+                  <Button fx:id="bt_search" mnemonicParsing="false" onAction="#bt_searchEvent" style="-fx-background-color: #336666;" text="检索" textFill="WHITE" />
+                  <TextField fx:id="tf_productName" prefWidth="392.0" promptText="请输入需要查询的产品名称" visible="false" />
+                  <Button fx:id="bt_okSearch" mnemonicParsing="false" onAction="#bt_okSearchEvent" style="-fx-background-color: #336666;" text="查询" textFill="WHITE" visible="false" />
+                  <Button fx:id="bt_reset" mnemonicParsing="false" onAction="#bt_resetEvent" style="-fx-background-color: #336666;" text="重置" textFill="#f2eeee" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

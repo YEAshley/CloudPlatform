@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.CloudFactoryInfoFrameController">
+   <children>
+      <ImageView fitHeight="499.0" fitWidth="1032.0">
+         <image>
+            <Image url="@images/background3.jpg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="456.0" prefWidth="942.0">
+         <children>
+            <HBox layoutX="30.0" layoutY="53.0" prefHeight="36.0" prefWidth="665.0" spacing="30.0" AnchorPane.bottomAnchor="410.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="53.0">
+               <children>
+                  <Button fx:id="bt_search" mnemonicParsing="false" onAction="#bt_searchEvent" style="-fx-background-color: #336666;" text="检索" textFill="WHITE" />
+                  <TextField fx:id="tf_search" prefHeight="36.0" prefWidth="271.0" promptText="请输入需要查询的工厂名称" visible="false" />
+                  <Button fx:id="bt_okSearch" mnemonicParsing="false" onAction="#bt_okSearchEvent" style="-fx-background-color: #336666;" text="查询" textFill="WHITE" visible="false" />
+                  <Button fx:id="bt_reset" mnemonicParsing="false" onAction="#bt_resetEvent" style="-fx-background-color: #336666;" text="重置" textFill="WHITE" visible="false" />
+               </children>
+            </HBox>
+            <Text fx:id="text_tip" layoutX="38.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="407.3603515625" />
+            <TableView fx:id="tv_FactoryInfo" layoutX="24.0" layoutY="120.0" prefHeight="260.0" prefWidth="894.0">
+              <columns>
+                <TableColumn fx:id="tc_number" prefWidth="75.0" text="序号" />
+                <TableColumn fx:id="tc_factoryName" prefWidth="130.0" text="工厂名称" />
+                  <TableColumn fx:id="tc_factoryProfile" prefWidth="177.0" text="工厂简介" />
+                  <TableColumn fx:id="tc_name" prefWidth="118.0" text="负责人" />
+                  <TableColumn fx:id="tc_phone" prefWidth="120.0" text="联系方式" />
+                  <TableColumn fx:id="tc_id" prefWidth="109.0" text="登录账号" />
+                  <TableColumn fx:id="tc_status" prefWidth="93.0" text="工厂状态" />
+                  <TableColumn fx:id="tc_action" prefWidth="72.0" text="操作" />
+                  <TableColumn fx:id="temp" prefWidth="75.0" text="Column X" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

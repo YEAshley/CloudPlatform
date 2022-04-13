@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="422.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.AddUserFrameController">
+    <children>
+      <ImageView fitHeight="467.0" fitWidth="815.0" layoutX="-14.0">
+         <image>
+            <Image url="@images/background1.jpg" />
+         </image>
+      </ImageView>
+        <GridPane alignment="CENTER" layoutX="6.0" layoutY="69.0" prefHeight="412.0" prefWidth="825.0" vgap="20.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="30.0">
+            <columnConstraints>
+                <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" maxWidth="405.0" minWidth="10.0" prefWidth="106.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="552.0" minWidth="10.0" prefWidth="448.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="*设置账号：" textAlignment="RIGHT" textFill="WHITE" />
+                <Label text="*设置密码：" textFill="WHITE" GridPane.rowIndex="1" />
+                <Label text="*真实姓名：" textFill="WHITE" GridPane.rowIndex="2" />
+                <Label text="*联系方式：" textFill="WHITE" GridPane.rowIndex="3" />
+                <Label text="*用户类型：" textFill="WHITE" GridPane.rowIndex="4" />
+                <Label fx:id="lb_factoryName" text="*工厂名称：" textFill="WHITE" GridPane.rowIndex="5" />
+                <Label fx:id="lb_factoryProfile" text="*工厂简介：" textFill="WHITE" GridPane.rowIndex="6" />
+                <TextField fx:id="tf_id" promptText="请设置登录账号" GridPane.columnIndex="1" />
+                <PasswordField fx:id="pf_password" promptText="请设置登录密码" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <TextField fx:id="tf_name" promptText="请输入用户的真实姓名" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <TextField fx:id="tf_phone" promptText="请输入用户的联系方式" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <TextField fx:id="tf_factoryName" promptText="请输入工厂名称" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                <TextField fx:id="tf_factoryProfile" promptText="请输入工厂简介" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <HBox alignment="CENTER_LEFT" spacing="25.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <children>
+                        <RadioButton fx:id="bt_cloudFactory" mnemonicParsing="false" onAction="#bt_cloudFactoryEvent" text="云工厂" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="actor" />
+                            </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="bt_franchiser" mnemonicParsing="false" onAction="#bt_franchiserEvent" text="经销商" textFill="WHITE" toggleGroup="$actor" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                </HBox>
+            </children>
+        </GridPane>
+        <HBox alignment="CENTER_RIGHT" layoutY="363.0" prefHeight="88.0" prefWidth="727.0" spacing="50.0" AnchorPane.rightAnchor="60.0">
+            <children>
+                <Button fx:id="bt_ok" mnemonicParsing="false" onAction="#bt_okEvent" style="-fx-background-color: #993333;" text="确定" textFill="WHITE" />
+                <Button fx:id="bt_close" mnemonicParsing="false" onAction="#bt_closeEvent" style="-fx-background-color: #996633;" text="关闭" textFill="WHITE" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

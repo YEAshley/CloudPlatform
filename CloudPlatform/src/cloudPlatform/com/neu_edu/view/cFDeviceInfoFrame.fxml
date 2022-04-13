@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="489.0" prefWidth="1029.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.CFDeviceInfoFrameController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="1046.0" layoutX="-4.0">
+         <image>
+            <Image url="@images/background3.jpg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="2.0" layoutY="12.0" prefHeight="466.0" prefWidth="1007.0">
+         <children>
+            <HBox layoutX="13.0" layoutY="33.0" prefHeight="36.0" prefWidth="992.0" spacing="20.0">
+               <children>
+                  <Button fx:id="bt_add" mnemonicParsing="false" onAction="#bt_addEvent" prefWidth="77.0" style="-fx-background-color: #CC9933;" text="新建" textFill="WHITE" />
+                  <Button fx:id="bt_lease" mnemonicParsing="false" onAction="#bt_leaseEvent" prefWidth="109.0" style="-fx-background-color: #CC99CC;" text="租用设备" textFill="WHITE" />
+                  <Button fx:id="bt_search" mnemonicParsing="false" onAction="#bt_searchEvent" prefWidth="79.0" style="-fx-background-color: #336666;" text="检索" textFill="WHITE" />
+                  <TextField fx:id="tf_search" prefWidth="294.0" promptText="请输入需查询的设备名称" visible="false" />
+                  <Button fx:id="bt_ok" mnemonicParsing="false" onAction="#bt_okEvent" style="-fx-background-color: #336666;" text="查询" textFill="WHITE" visible="false" />
+                  <Button fx:id="bt_reset" mnemonicParsing="false" onAction="#bt_resetEvent" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: #336666;" text="重置" textFill="WHITE" visible="false" />
+               </children>
+            </HBox>
+            <TableView fx:id="tv_devInfo" layoutX="14.0" layoutY="90.0" prefHeight="307.0" prefWidth="1008.0" AnchorPane.rightAnchor="10.0">
+               <columns>
+                  <TableColumn fx:id="tc_number" prefWidth="44.0" text="序号" />
+                  <TableColumn fx:id="tc_devCode" prefWidth="78.0" text="设备编号" />
+                  <TableColumn fx:id="tc_devName" prefWidth="79.0" text="设备名称" />
+                  <TableColumn fx:id="tc_devType" prefWidth="83.0" text="设备类型" />
+                  <TableColumn fx:id="tc_devSize" minWidth="0.0" prefWidth="78.0" text="设备规格" />
+                  <TableColumn fx:id="tc_devDescription" minWidth="8.0" prefWidth="95.0" text="设备描述" />
+                  <TableColumn fx:id="tc_devStatus" prefWidth="79.0" text="设备状态" />
+                  <TableColumn fx:id="tc_leaseStatus" prefWidth="91.0" text="设备来源" />
+                  <TableColumn fx:id="tc_factory" prefWidth="81.0" text="所属工厂" />
+                  <TableColumn minWidth="0.0" prefWidth="299.0" text="操作">
+                     <columns>
+                        <TableColumn fx:id="tc_remote" prefWidth="95.0" text="远程控制" />
+                        <TableColumn fx:id="tc_modify" prefWidth="50.0" text="修改" />
+                        <TableColumn fx:id="tc_delete" prefWidth="54.0" text="删除" />
+                        <TableColumn fx:id="tc_configure" prefWidth="100.0" text="配置产品" />
+                     </columns>
+                  </TableColumn>
+               </columns>
+               <effect>
+                  <ColorAdjust brightness="-0.03" contrast="0.07" />
+               </effect>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

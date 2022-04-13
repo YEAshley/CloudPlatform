@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="462.0" prefWidth="915.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.ConfigureFrameController">
+   <children>
+      <ImageView fitHeight="462.0" fitWidth="937.0" layoutX="-6.0">
+         <image>
+            <Image url="@images/background1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="901.0">
+         <children>
+            <VBox layoutY="2.0" prefHeight="296.0" prefWidth="901.0" spacing="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="30.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="901.0" spacing="20.0" AnchorPane.bottomAnchor="416.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label text="设备编号：" textFill="WHITE" />
+                        <TextField fx:id="tf_devCode" prefHeight="36.0" prefWidth="158.0" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="24.0" prefWidth="118.0" text="    设备名称：" textAlignment="RIGHT" textFill="WHITE" />
+                        <TextField fx:id="tf_devName" prefHeight="36.0" prefWidth="214.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="52.0" prefHeight="39.0" prefWidth="890.0">
+                     <children>
+                        <Button fx:id="bt_addProduct" mnemonicParsing="false" onAction="#bt_addProductEvent" style="-fx-background-color: #669999;" text="添加商品" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="113.0" prefHeight="52.0" prefWidth="901.0" spacing="20.0" AnchorPane.bottomAnchor="297.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="113.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="91.0" text="产品名称：" textFill="WHITE" />
+                        <ComboBox fx:id="comboBox1" prefWidth="150.0" promptText="--请选择--" />
+                        <Label prefHeight="24.0" prefWidth="177.0" text="产品产能（件/小时）:" textFill="WHITE" />
+                        <TextField fx:id="tf_capacity1" promptText="产品产能" />
+                        <Button fx:id="bt_delete1" mnemonicParsing="false" onAction="#bt_delete1Event" style="-fx-background-color: #FF9900;" text="删除" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="123.0" prefHeight="52.0" prefWidth="901.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="91.0" text="产品名称：" textFill="WHITE" />
+                        <ComboBox fx:id="comboBox2" prefWidth="150.0" promptText="--请选择--" />
+                        <Label prefHeight="24.0" prefWidth="177.0" text="产品产能（件/小时）:" textFill="WHITE" />
+                        <TextField fx:id="tf_capacity2" promptText="产品产能" />
+                        <Button fx:id="bt_delete2" mnemonicParsing="false" onAction="#bt_delete2Event" style="-fx-background-color: #FF9900;" text="删除" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutY="179.0" prefHeight="52.0" prefWidth="901.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="91.0" text="产品名称：" textFill="WHITE" />
+                        <ComboBox fx:id="comboBox3" prefWidth="150.0" promptText="--请选择--" />
+                        <Label prefHeight="24.0" prefWidth="177.0" text="产品产能（件/小时）:" textFill="WHITE" />
+                        <TextField fx:id="tf_capacity3" promptText="产品产能" />
+                        <Button fx:id="bt_delete3" mnemonicParsing="false" onAction="#bt_delete3Event" style="-fx-background-color: #FF9900;" text="删除" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" layoutY="366.0" prefHeight="46.0" prefWidth="901.0" spacing="20.0" AnchorPane.rightAnchor="30.0">
+               <children>
+                  <Button fx:id="bt_ok" mnemonicParsing="false" onAction="#bt_okEvent" style="-fx-background-color: #993333;" text="确认" textFill="WHITE" />
+                  <Button fx:id="bt_close" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#bt_closeEvent" style="-fx-background-color: #996633;" text="关闭" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

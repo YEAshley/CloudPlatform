@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="478.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cloudPlatform.com.neu_edu.controller.DeviceTypeFrameController">
+   <children>
+      <ImageView fitHeight="493.0" fitWidth="972.0" layoutY="-6.0">
+         <image>
+            <Image url="@images/background3.jpg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="460.0" prefWidth="963.0">
+         <children>
+            <TableView fx:id="tv_deviceType" layoutX="132.0" layoutY="113.0" prefHeight="270.0" prefWidth="728.0">
+              <columns>
+                <TableColumn fx:id="tc_number" prefWidth="169.0" text="序号" />
+                <TableColumn fx:id="tc_devName" prefWidth="172.0" text="类型名称" />
+                  <TableColumn prefWidth="372.0" text="操作">
+                     <columns>
+                        <TableColumn fx:id="tc_modify" prefWidth="79.0" text="修改" />
+                        <TableColumn fx:id="tc_delete" prefWidth="71.0" text="删除" />
+                     </columns>
+                  </TableColumn>
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <HBox layoutX="128.0" layoutY="43.0" prefHeight="35.0" prefWidth="736.0" spacing="20.0">
+               <children>
+                  <Button fx:id="bt_add" mnemonicParsing="false" onAction="#bt_addEvent" style="-fx-background-color: #CC9933;" text="新建" textFill="WHITE" />
+                  <Button fx:id="bt_search" mnemonicParsing="false" onAction="#bt_searchEvent" style="-fx-background-color: #336666;" text="检索" textFill="#fffdfd" />
+                  <TextField fx:id="tf_search" promptText="请输入需要查询的类型名称" visible="false" />
+                  <Button fx:id="bt_okSearch" mnemonicParsing="false" onAction="#bt_okSearchEvent" style="-fx-background-color: #336666;" text="查询" textFill="WHITE" visible="false" />
+                  <Button fx:id="bt_reset" mnemonicParsing="false" onAction="#bt_resetEvent" style="-fx-background-color: #336666;" text="重置" textFill="#f8f8f8" visible="false" />
+               </children>
+            </HBox>
+            <HBox layoutX="533.0" layoutY="408.0" prefHeight="36.0" prefWidth="326.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="tf_add" promptText="请输入新建类型名称" visible="false" />
+                  <Button fx:id="bt_okAdd" mnemonicParsing="false" style="-fx-background-color: #993333;" text="确定" textFill="WHITE" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="apache-log4j-2.13">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Desktop/给学生_项目实训/jar包/apache-log4j-2.13.3-bin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Desktop/给学生_项目实训/jar包/apache-log4j-2.13.3-bin" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/Desktop/给学生_项目实训/jar包/apache-log4j-2.13.3-bin" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/Desktop/给学生_项目实训/jar包/apache-log4j-2.13.3-bin" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/BookManageSystem/MainApp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/JavaFxTest/src/MainWindow.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/hxy_ClockSystem/com/neuedu/MainApp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/hxy_ClockSystem/com/neuedu/controller/LoginFrameController.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/hxy_ClockSystem/com/neuedu/tools/SimpleTools.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/javafx_Demo/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/listView/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/priv/yyt20195462/address/MainApp.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/treeView/MainApp.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
